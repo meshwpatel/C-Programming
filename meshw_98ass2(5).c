@@ -1,15 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main (){
-int n,i;
+int main() {
+    int n, i, count = 0;
 
-printf("Entre a number:");
-scanf("%d",&n);
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
 
-printf("First %d odd numbers are:\n",n);
-for(i=1;i<=n;i++)
-{
-printf("%d\n",2*i-1);
-}
-return 0;
+    printf("First %d odd numbers are:\n", n);
+
+    i = 1; 
+    while (count < n) {
+        printf("%d\n", i);
+        i = i + 2;
+        count++;
+    }
+    return 0;
 }
